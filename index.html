@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="smallScreen.css" media="screen and (max-width: 480px)"/>
+    <link rel="stylesheet" href="middleScreen.css" media="screen and (max-width: 1023px) and (min-width: 481px)"/>
+    <link rel="stylesheet" href="wideScreen.css" media="screen and (min-width: 1024px)"/>
+    <script src="https://kit.fontawesome.com/4c089fd9cc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="search">
+        <input type="text" name="search" placeholder="Country, State or City" />
+        <button>Search</button>
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+
+        <p id="error"></p>
+
+        <!-- From Uiverse.io by Li-Deheng -->
+        <div class="loader">
+            <div class="circle">
+                <div class="dot"></div>
+                <div class="outline"></div>
+            </div>
+            <div class="circle">
+                <div class="dot"></div>
+                <div class="outline"></div>
+            </div>
+            <div class="circle">
+                <div class="dot"></div>
+                <div class="outline"></div>
+            </div>
+            <div class="circle">
+                <div class="dot"></div>
+                <div class="outline"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="weather_data" style="display: none;">
+        <div id="weekDay">
+            <i class="fa-solid fa-arrow-left" id="left"></i>
+            <h1 id="day"></h1>
+            <p></p>
+            <i class="fa-solid fa-arrow-right" id="right"></i>
+        </div>
+        <div id="weatherIMG">
+            <img src="  " alt="weatherIMG" />
+        </div>
+        <div id="windSpeedAnd">
+            <p id="windSpeed">WindSpeed: <span></span></p>
+            <p id="humidity">Humidity: <span></span></p>
+            <p id="cloudOver">CloudOver: <span></span></p>
+        </div>
+        <div id="conditions">
+            <p id="weatherStatus">Weather Status: <span></span></p>
+            <p id="temperature">Temperature: <span></span></p>
+            <p id="fullAddress">Full Address: <span></span></p>
+        </div>
+        <div id="realFeel">
+            <p>Real Feel: <span></span></p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <!-- <script src="index2_openWeatherApp.js"></script> -->
+</body>
+
+</html>
