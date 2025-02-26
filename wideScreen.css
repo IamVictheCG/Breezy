@@ -12,11 +12,13 @@ body {
   .hook {
     color: rgb(252, 252, 252);
     font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.612);
     position: absolute;
-    top: 34%;
+    top: 20%;
     /* left: 5%; */
     text-align: center;
-    font-weight: boldGIT;
+    padding-inline: 10px;
+    font-weight: bold;
     font-family: 'Playwrite IT Moderna';
   }
     /* border: 1px solid rgb(140, 255, 0); */
