@@ -173,8 +173,8 @@ body {
   #realFeel {
       display: block;
       position: absolute;
-      top: 32%;
-      right: 4%;
+      bottom: 2%;
+      right: 2%;
       font-weight: bold;
       border: none;
 

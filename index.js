@@ -14,9 +14,14 @@ const leftArrow = $("#left")
 const rightArrow = $("#right")
 const weekDay = $("#day")
 const theDate = $("#weekDay p")
+const weatherIMG_block = $("#weatherIMG");
+const realFeel_block = $("#realFeel span")
 console.log(weatherIMG.attr("alt"));
 let day = 0
 let weatherData = null;
+console.log(weatherIMG_block, realFeel_block);
+
+
 
 async function getWeatherData(city) {
     const key = "4YRUE4WF8UP7CK9L7BLFJK3PT"
